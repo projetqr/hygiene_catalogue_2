@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hygiene Product Catalogue</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .bg-brand-primary { background-color: #b41f3a; }
+        .text-brand-primary { color: #b41f3a; }
+        .button {
+            background-color: #b41f3a;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-weight: 500;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-align: center;
+        }
+        .button:hover {
+            background-color: #99192f;
+            transform: translateY(-2px);
+        }
+        .button i { color: white; margin-right: 0.5rem; }
+    </style>
+</head>
+<body class="bg-pink-50 font-roboto font-bold">
+
+    <!-- Header -->
+    <header class="relative bg-cover bg-center h-40" style="background-image: url('https://via.placeholder.com/1200x400?text=Hygiene+Product+Banner');">
+        <div class="absolute inset-0 bg-white bg-opacity-80 flex items-center justify-between px-6">
+            <img src="jnanpalace.png" alt="Logo" class="h-16 w-auto">
+            <div class="text-center mx-auto">
+                <h1 class="text-2xl md:text-3xl font-bold text-brand-primary">Hygiene Product Catalogue – FT & FDS</h1>
+                <p class="text-sm md:text-base text-brand-primary mt-1 font-medium">
+                    Accès Rapide aux Documents - Employés
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenu -->
+    <div class="container mx-auto p-4" id="documentContainer">
+        <div class="flex justify-center">
+            <a href="FT_et_FDS\FT_FDS.pdf" target="_blank" class="button fade-in">
+                <i class="fas fa-file-pdf"></i> FT et FDS dératisation et anti nuisible
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 text-center py-4 mt-8">
+        <p class="text-xs text-gray-600">Marriott International © 2025 - Accès réservé aux employés</p>
+    </footer>
+
+</body>
+</html>
